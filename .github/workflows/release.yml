@@ -47,7 +47,7 @@ jobs:
         configuration: ".github/workflows/changelog-configuration.json"
         toTag: "main"
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Update Changelog
       uses: stefanzweifel/changelog-updater-action@v1
       with:
